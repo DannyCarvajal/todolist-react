@@ -6,9 +6,13 @@ const Form = ({todo, setTodo, inputText, setInputText}) => {
 		setInputText(e.target.value);
 	};
 
+	const generateKey = _ => {
+		return `item_${new Date().getTime()}`;
+	};
+
 	const todoHandler = e => {
 		e.preventDefault();
-		setTodo([...todo, {completed: false, name: inputText}]);
+		setTodo([...todo, {completed: false, name: inputText, id: generateKey()}]);
 		setInputText("");
 	};
 

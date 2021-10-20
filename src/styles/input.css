@@ -5,13 +5,12 @@
 }
 
 .todoInput {
-    /* padding: 3px; */
     padding-left: 25px;
     border: none;
     border-radius: 5px;
     outline: none;
     background-color: whitesmoke;
-    width: 600px;
+    width: 500px;
     height: 50px;
     font-size: 1.2rem;
     font-style: italic;
@@ -23,7 +22,7 @@
     position: absolute;
     right: -70px;
     margin-right: 100px;
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     cursor: pointer;
     border: none;
 }

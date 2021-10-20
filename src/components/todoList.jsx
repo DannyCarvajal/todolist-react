@@ -22,8 +22,9 @@ const todoList = ({todo, setTodo}) => {
 	return (
 		<div className="todoList">
 			{todo.map(t => {
+				console.log("the id is ", t.id);
 				return (
-					<div className="todo">
+					<div className="todo" key={t.id}>
 						<h2 className="todo__title">{t.name}</h2>
 						<button className="todo__erase" onClick={eraseTodo}>
 							<i className="fa fa-trash"></i>
